@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    column-gap: 10px;
+    background-color: #FDFBA6;
+}
+footer{
+    display: flex;
+    background-color: #404039;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
