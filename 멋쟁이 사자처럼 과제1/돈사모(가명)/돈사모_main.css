@@ -8,16 +8,20 @@
     margin-right: auto;
     max-width: 1700px;
     font-family: 'Jua', sans-serif;
+
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-image: url(돈사모\ 배경화면.jpg);
+    background-repeat :no-repeat;
+    background-position: center;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none
 }
 
 .main-box {
     display: flex;
-
     max-width: 1700px;
     height: 900px;
     color: black;
@@ -48,6 +52,7 @@ nav {
     font-size: 30px;
     padding: 10px;
     background-color: #EEEEE7;
+
 }
 
 footer {
@@ -61,4 +66,36 @@ footer {
 
     box-shadow: 10px 7px 7px rgba(0, 0, 0, 0.1);
 
+}
+content{
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+}
+.main-box,.text-wrap{
+    overflow-y: scroll;   
+}
+.main-box::-webkit-scrollbar{
+    width: 6px;
+}
+.text-wrap::-webkit-scrollbar{
+    width: 1px;
+}
+.main-box::-webkit-scrollbar-thumb{
+    height: 20%;
+    background-color: rgba(238,238,223,0.5);
+    border-radius: 10px;  
+}
+.text-wrap{
+    display: grid;
+    width: 500px;
+    height: 350px;
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    background-color: #EAECDE;
+    margin-bottom: 30px;
+}
+img{
+    width: 60%;
 }
