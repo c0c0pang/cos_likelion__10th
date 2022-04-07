@@ -14,7 +14,6 @@ body {
     background-image: url(돈사모\ 배경화면.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
@@ -29,10 +28,10 @@ h2 {
     max-width: 1700px;
     height: 900px;
     color: black;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.5);
+    background: -webkit-linear-gradient(right, #DEDEB2, #BBBBA4);
     margin-left: auto;
     margin-right: auto;
-    background: -webkit-linear-gradient(right, #DEDEB2, #BBBBA4);
     border-radius: 10px 10px 0 0;
 }
 
@@ -74,21 +73,26 @@ footer {
     font-weight: bold;
     box-shadow: 10px 7px 7px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 10px 10px;
+    
 }
 
 content {
     display: grid;
-    column-gap: 30px;
+    column-gap: 40px;
+    row-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
+    
 }
 
 .main-box,
 .text-wrap {
     overflow-y: scroll;
+    
 }
 
 .main-box::-webkit-scrollbar {
+    
     width: 6px;
 }
 
@@ -96,38 +100,31 @@ content {
     width: 1px;
 }
 
-*::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-}
-
 span {
     display: flex;
     background-color: #F0D330;
-    width: 100%;
+    width: 480px;    
     height: 40px;
-    border-radius: 12px 12px 0 0;
+    border-radius: 10px 10px 0 0;
     font-size: 28px;
-    justify-content:center;
-  align-items:center;
-  position: absolute;
-  width: 500px;
-  margin: -10px;
+    justify-content: center;
+    align-items: center;
+    
 }
-
 .text-wrap {
     display: grid;
-    width: 500px;
+    width: 450px;
     height: 350px;
     box-shadow: 10px 7px 7px rgba(48, 47, 47, 0.2);
-    border-radius: 12px 12px 4px 4px;
+    border-radius: 60px 60px 4px 4px;
     background-color: #EAECDE;
     margin-bottom: 30px;
-    row-gap: 8px;
     padding: 10px;
-
+    
 }
 
 img {
-    margin-top: 50px;
-    width: 55%;
+    display: flex;
+    width: 70%;
+    
 }
