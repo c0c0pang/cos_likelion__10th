@@ -17,13 +17,13 @@
 }
 
 body {
-    background-image: url(돈사모\ 배경화면.jpg);
+    background-image: url(./AAT\ 배경화면.jpg);
     /*배경화면의 반복을 방지*/
     background-repeat: no-repeat;
     /*배경사진이 정 가운데에 오도록 설정*/
     background-position: center;
     /*사용자가 드래그를 못하게 설정*/
-    user-select: none
+    user-select: none;
 }
 
 h2 {
@@ -32,6 +32,8 @@ h2 {
 
 .main-box {
     /*main을 1차원형태인 flex로 설정*/
+    
+    background-image: url(돈사모\ 배경화면.jpg);
     display: flex;
     max-width: 1700px;
     height: 900px;
@@ -108,11 +110,11 @@ content {
 
 .main-box::-webkit-scrollbar {
     /*스크롤바를 작게 만들어 안보이게 만듬*/
-    width: 1px;
+    display: none !important;
 }
 
 .text-wrap::-webkit-scrollbar {
-    width: 1px;
+    display: none !important;
 }
 
 span {
