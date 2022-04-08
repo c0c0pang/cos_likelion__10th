@@ -5,27 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOD에 오신것을 환영합니다.</title>
+    <title>MOD에 오신것을 환영합니다.</title><!--홈페이지 이름-->
     <link rel="stylesheet" href="./AAT_main.css">
 </head>
 
 <body>
+    <!--
+        header 태그안에 홈페이지의 이름을 기재하기 위해 사용하였으며
+        h1,h2태그를 이용하여 제목,소제목을 기재
+    -->
     <header>
         <h1>A . A . T</h1>
         <h2>(All About Tonkatsu)</h2>
     </header>
+    <!--
+        nav 태그안에 메뉴바를 만들었고 각각의 태그p를 이용하여 어떤 메뉴가 있는지
+        보여줌
+    -->
     <nav>
         <p class="place_page">맛집장소</p>
         <p class="review_page">후기들보기</p>
         <p calss="inquiry">문의하기</p>
     </nav>
+    <!--
+        div태그를 하여 main이 되는 큰 공간을 생성
+    -->
     <div class="main-box">
+        <!--
+            content 태그를 이용하여 이 태그안에 있는 것들은
+            main의 content 라는 것을 명시해주고 그것들을 한공간으로 묶었음.
+        -->
         <content>
-            
+            <!--
+                div태그를 이용하여 하나의 박스를 생성하고 그 박스안에
+                가게들의 설명을 기재
+            -->
             <div class="box">
+                <!--
+                    span이라는 태그를 이용하여 가게이름을 보여준다.
+                    따로 디자인을 하기위해 따로 빼두었다.
+                -->
                 <span>
                     <p class="text-shop">가게이름: 윤스쿡</p>
-                </span>   
+                </span>
+                <!--
+                    div태그를 이용하여 박스의 들어갈 내용들을 써줬으며 
+                    그 내용들을 하나로 묶었다.
+                -->   
                 <div class="text-wrap">
                         <img src="./로스가츠.jpg" alt="Poster">
                         <p class="text-place">장소: 서울 노원구 광운로 29 2층 윤스쿡</p>
@@ -37,6 +63,7 @@
                             아웃풋!정말 윤스쿡은 광운대의 최고의 아웃풋!정말 윤스쿡은 광운대의 최고의 아웃풋!정말 윤스쿡은 광운대의 최고의 아웃풋!</p>
                 </div>
             </div>
+            
             <div class="box">
                 <span>
                     <p class="text-shop">가게이름: 윤스쿡</p>
@@ -111,6 +138,9 @@
         </content>
     </div>
 
+    <!--
+        footer를 이용하여 홈페이지의 대한 간단한 정보를 기재 하기위해 쓰임.
+    -->
     <footer>
         <p calss="foot_yera">개설: 2022-04-09</p>
         <p class="foot_name">만든이: 최원석</p>

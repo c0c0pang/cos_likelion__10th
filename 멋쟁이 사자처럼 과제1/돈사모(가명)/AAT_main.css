@@ -1,21 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');/*외부 폰트가져옴*/
 
 * {
+    /* *키워드를 이용하여 공통적으로 들어갈 사항들을 적어둠 */
+    /*여백 제거*/
     margin: 0px;
     padding: 0px;
+    /*동일한 사이즈를 갖도록 설정*/
     box-sizing: border-box;
+    /*가운데로 정렬*/
     margin-left: auto;
     margin-right: auto;
+    /*늘어날 수 있는 최대 가로길이 설정*/
     max-width: 1700px;
+    /*전체 code에 동일 font적용*/
     font-family: 'Jua', sans-serif;
 }
 
 body {
     background-image: url(돈사모\ 배경화면.jpg);
+    /*배경화면의 반복을 방지*/
     background-repeat: no-repeat;
+    /*배경사진이 정 가운데에 오도록 설정*/
     background-position: center;
-    -moz-user-select: none;
-    -ms-user-select: none;
+    /*사용자가 드래그를 못하게 설정*/
     user-select: none
 }
 
@@ -24,45 +31,50 @@ h2 {
 }
 
 .main-box {
+    /*main을 1차원형태인 flex로 설정*/
     display: flex;
     max-width: 1700px;
     height: 900px;
     color: black;
+    /*박스 테두리에 그림자 설정*/
     box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.5);
+    /*배경색을 좌우로 다르게 설정*/
     background: -webkit-linear-gradient(right, #DEDEB2, #BBBBA4);
     margin-left: auto;
     margin-right: auto;
+    /*박스의 테두리를 둥글게 설정*/
     border-radius: 10px 10px 0 0;
 }
 
 header {
+    /*텍스트를 가운데로 정렬*/
     text-align: center;
+    /*padding을 텍스트를 좀 더 안쪽으로 오게 설정 */
     padding: 10px;
     max-width: 1700px;
     font-size: 35px;
     border-radius: 10px 10px 0 0;
 }
 
-content {
-    display: flex;
-}
 
 nav {
     box-shadow: 10px 7px 7px rgba(0, 0, 0, 0.1);
     display: flex;
+    /*메인축과 교차축의 아이템들을 가운데로 정렬*/
     justify-content: center;
     align-items: center;
+    /*column-gap을 이용하여 coulumn끼리 50px만큼 떨어지게 설정*/
     column-gap: 50px;
     font-size: 30px;
     padding: 10px;
     background-color: #EEEEE7;
+    /*nav바를 고정하기 위해 absolute를 이용*/
     position: absolute;
+    /*현재 width가 늘어날 수 있는 최대 size로 늘어남*/
     width: 100%;
-    z-index: 1;
     border-radius: 10px 10px 0 0;
 
 }
-
 footer {
     display: flex;
     height: 50px;
@@ -75,25 +87,29 @@ footer {
     border-radius: 0 0 10px 10px;
     
 }
-
 content {
+    /*2차원으로 박스배열이 가능한 grid로 설정*/
     display: grid;
     column-gap: 40px;
     row-gap: 10px;
+    /*
+        content안에 최대로 들어갈 수 있는 박스수는 3개이며 각각은 1:1:1비율로 만들어진다.
+        3개가 넘어갈 시 다음 행으로 넘어감
+    */
     grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
     
 }
-
 .main-box,
 .text-wrap {
+    /*임의의로 스크롤바를 줌*/
     overflow-y: scroll;
     
 }
 
 .main-box::-webkit-scrollbar {
-    
-    width: 6px;
+    /*스크롤바를 작게 만들어 안보이게 만듬*/
+    width: 1px;
 }
 
 .text-wrap::-webkit-scrollbar {
@@ -109,7 +125,6 @@ span {
     font-size: 28px;
     justify-content: center;
     align-items: center;
-    
 }
 .text-wrap {
     display: grid;
@@ -126,5 +141,4 @@ span {
 img {
     display: flex;
     width: 70%;
-    
 }
