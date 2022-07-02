@@ -1,0 +1,9 @@
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+/*처음 화면에 이벤트를 숨기기 위한 역할*/
+/* .question{
+    display: none;
+} */
