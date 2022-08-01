@@ -1,0 +1,19 @@
+
+.bar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 72, 224);
+    text-align: center;
+    padding-top: 20px;
+}
+.newBar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(172, 228, 83);
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+.show{
+    display: block;
+}
