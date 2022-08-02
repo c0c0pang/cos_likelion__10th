@@ -1,0 +1,14 @@
+body{
+    font-family: 'Jua', sans-serif;
+}
+.blue{
+    width: 0px;
+    height: 5px;
+    background-color: rgb(92, 100, 254);
+}
+.lyrics{
+    width: 250px;
+    height: 150px;
+    overflow: scroll;
+    background-color: rgb(192, 224, 255);
+}
