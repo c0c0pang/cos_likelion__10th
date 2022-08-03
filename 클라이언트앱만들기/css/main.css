@@ -1,0 +1,17 @@
+#main{
+    background-color: whitesmoke;
+    text-align: center;
+    width: 80%;
+    border-radius: 20px;
+}
+.startBtn{
+    background-color: whitesmoke;
+    border: 3px solid orange;
+    border-radius: 10px;
+    font-size: 20px;
+    
+}
+.startBtn:hover, .startBtn:active{
+    background-color: orange;
+    
+}
